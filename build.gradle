@@ -1,0 +1,17 @@
+group 'com.allstate'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    maven {    url 'http://maven.aspose.com/artifactory/simple/ext-release-local/'    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'com.aspose:aspose-cloud-android:1.0.0'
+    compile group: 'javax.mail', name: 'mail', version: '1.4'
+}
+
